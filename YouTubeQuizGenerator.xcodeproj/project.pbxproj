@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7064BCC2D6AD36800AB4FB5 /* YouTubeQuizGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7064BCB2D6AD36800AB4FB5 /* YouTubeQuizGeneratorApp.swift */; };
+		F7064BCE2D6AD36800AB4FB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7064BCD2D6AD36800AB4FB5 /* ContentView.swift */; };
+		F7064BD02D6AD36800AB4FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7064BCF2D6AD36800AB4FB5 /* Assets.xcassets */; };
+		F7064BD32D6AD36800AB4FB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7064BD22D6AD36800AB4FB5 /* Preview Assets.xcassets */; };
+		F7064BDD2D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7064BDC2D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.swift */; };
+		F7064BE72D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7064BE62D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.swift */; };
+		F7064BE92D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7064BE82D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITestsLaunchTests.swift */; };
+		F7064BF62D6AD3CE00AB4FB5 /* YouTubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7064BF52D6AD3CE00AB4FB5 /* YouTubeService.swift */; };
+		F7064BF82D6AD3FD00AB4FB5 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7064BF72D6AD3FD00AB4FB5 /* AIService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7064BD92D6AD36900AB4FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7064BC02D6AD36700AB4FB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7064BC72D6AD36700AB4FB5;
+			remoteInfo = YouTubeQuizGenerator;
+		};
+		F7064BE32D6AD36900AB4FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7064BC02D6AD36700AB4FB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7064BC72D6AD36700AB4FB5;
+			remoteInfo = YouTubeQuizGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7064BC82D6AD36700AB4FB5 /* YouTubeQuizGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeQuizGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7064BCB2D6AD36800AB4FB5 /* YouTubeQuizGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeQuizGeneratorApp.swift; sourceTree = "<group>"; };
+		F7064BCD2D6AD36800AB4FB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7064BCF2D6AD36800AB4FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7064BD22D6AD36800AB4FB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7064BD82D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeQuizGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7064BDC2D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeQuizGeneratorTests.swift; sourceTree = "<group>"; };
+		F7064BE22D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeQuizGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7064BE62D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeQuizGeneratorUITests.swift; sourceTree = "<group>"; };
+		F7064BE82D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeQuizGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7064BF52D6AD3CE00AB4FB5 /* YouTubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeService.swift; sourceTree = "<group>"; };
+		F7064BF72D6AD3FD00AB4FB5 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7064BC52D6AD36700AB4FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7064BD52D6AD36900AB4FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7064BDF2D6AD36900AB4FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7064BBF2D6AD36700AB4FB5 = {
+			isa = PBXGroup;
+			children = (
+				F7064BCA2D6AD36800AB4FB5 /* YouTubeQuizGenerator */,
+				F7064BDB2D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests */,
+				F7064BE52D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests */,
+				F7064BC92D6AD36700AB4FB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7064BC92D6AD36700AB4FB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7064BC82D6AD36700AB4FB5 /* YouTubeQuizGenerator.app */,
+				F7064BD82D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.xctest */,
+				F7064BE22D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7064BCA2D6AD36800AB4FB5 /* YouTubeQuizGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				F7064BCB2D6AD36800AB4FB5 /* YouTubeQuizGeneratorApp.swift */,
+				F7064BCD2D6AD36800AB4FB5 /* ContentView.swift */,
+				F7064BCF2D6AD36800AB4FB5 /* Assets.xcassets */,
+				F7064BD12D6AD36800AB4FB5 /* Preview Content */,
+				F7064BF52D6AD3CE00AB4FB5 /* YouTubeService.swift */,
+				F7064BF72D6AD3FD00AB4FB5 /* AIService.swift */,
+			);
+			path = YouTubeQuizGenerator;
+			sourceTree = "<group>";
+		};
+		F7064BD12D6AD36800AB4FB5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7064BD22D6AD36800AB4FB5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7064BDB2D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7064BDC2D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.swift */,
+			);
+			path = YouTubeQuizGeneratorTests;
+			sourceTree = "<group>";
+		};
+		F7064BE52D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7064BE62D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.swift */,
+				F7064BE82D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITestsLaunchTests.swift */,
+			);
+			path = YouTubeQuizGeneratorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7064BC72D6AD36700AB4FB5 /* YouTubeQuizGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7064BEC2D6AD36900AB4FB5 /* Build configuration list for PBXNativeTarget "YouTubeQuizGenerator" */;
+			buildPhases = (
+				F7064BC42D6AD36700AB4FB5 /* Sources */,
+				F7064BC52D6AD36700AB4FB5 /* Frameworks */,
+				F7064BC62D6AD36700AB4FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouTubeQuizGenerator;
+			productName = YouTubeQuizGenerator;
+			productReference = F7064BC82D6AD36700AB4FB5 /* YouTubeQuizGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7064BD72D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7064BEF2D6AD36900AB4FB5 /* Build configuration list for PBXNativeTarget "YouTubeQuizGeneratorTests" */;
+			buildPhases = (
+				F7064BD42D6AD36900AB4FB5 /* Sources */,
+				F7064BD52D6AD36900AB4FB5 /* Frameworks */,
+				F7064BD62D6AD36900AB4FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7064BDA2D6AD36900AB4FB5 /* PBXTargetDependency */,
+			);
+			name = YouTubeQuizGeneratorTests;
+			productName = YouTubeQuizGeneratorTests;
+			productReference = F7064BD82D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7064BE12D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7064BF22D6AD36900AB4FB5 /* Build configuration list for PBXNativeTarget "YouTubeQuizGeneratorUITests" */;
+			buildPhases = (
+				F7064BDE2D6AD36900AB4FB5 /* Sources */,
+				F7064BDF2D6AD36900AB4FB5 /* Frameworks */,
+				F7064BE02D6AD36900AB4FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7064BE42D6AD36900AB4FB5 /* PBXTargetDependency */,
+			);
+			name = YouTubeQuizGeneratorUITests;
+			productName = YouTubeQuizGeneratorUITests;
+			productReference = F7064BE22D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7064BC02D6AD36700AB4FB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F7064BC72D6AD36700AB4FB5 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					F7064BD72D6AD36900AB4FB5 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F7064BC72D6AD36700AB4FB5;
+					};
+					F7064BE12D6AD36900AB4FB5 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F7064BC72D6AD36700AB4FB5;
+					};
+				};
+			};
+			buildConfigurationList = F7064BC32D6AD36700AB4FB5 /* Build configuration list for PBXProject "YouTubeQuizGenerator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7064BBF2D6AD36700AB4FB5;
+			productRefGroup = F7064BC92D6AD36700AB4FB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7064BC72D6AD36700AB4FB5 /* YouTubeQuizGenerator */,
+				F7064BD72D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests */,
+				F7064BE12D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7064BC62D6AD36700AB4FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7064BD32D6AD36800AB4FB5 /* Preview Assets.xcassets in Resources */,
+				F7064BD02D6AD36800AB4FB5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7064BD62D6AD36900AB4FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7064BE02D6AD36900AB4FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7064BC42D6AD36700AB4FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7064BF62D6AD3CE00AB4FB5 /* YouTubeService.swift in Sources */,
+				F7064BF82D6AD3FD00AB4FB5 /* AIService.swift in Sources */,
+				F7064BCE2D6AD36800AB4FB5 /* ContentView.swift in Sources */,
+				F7064BCC2D6AD36800AB4FB5 /* YouTubeQuizGeneratorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7064BD42D6AD36900AB4FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7064BDD2D6AD36900AB4FB5 /* YouTubeQuizGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7064BDE2D6AD36900AB4FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7064BE72D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITests.swift in Sources */,
+				F7064BE92D6AD36900AB4FB5 /* YouTubeQuizGeneratorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7064BDA2D6AD36900AB4FB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7064BC72D6AD36700AB4FB5 /* YouTubeQuizGenerator */;
+			targetProxy = F7064BD92D6AD36900AB4FB5 /* PBXContainerItemProxy */;
+		};
+		F7064BE42D6AD36900AB4FB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7064BC72D6AD36700AB4FB5 /* YouTubeQuizGenerator */;
+			targetProxy = F7064BE32D6AD36900AB4FB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F7064BEA2D6AD36900AB4FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7064BEB2D6AD36900AB4FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7064BED2D6AD36900AB4FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YouTubeQuizGenerator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.YouTubeQuizGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7064BEE2D6AD36900AB4FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YouTubeQuizGenerator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.YouTubeQuizGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7064BF02D6AD36900AB4FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.YouTubeQuizGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTubeQuizGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YouTubeQuizGenerator";
+			};
+			name = Debug;
+		};
+		F7064BF12D6AD36900AB4FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.YouTubeQuizGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTubeQuizGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YouTubeQuizGenerator";
+			};
+			name = Release;
+		};
+		F7064BF32D6AD36900AB4FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.YouTubeQuizGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouTubeQuizGenerator;
+			};
+			name = Debug;
+		};
+		F7064BF42D6AD36900AB4FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jojo.YouTubeQuizGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouTubeQuizGenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7064BC32D6AD36700AB4FB5 /* Build configuration list for PBXProject "YouTubeQuizGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7064BEA2D6AD36900AB4FB5 /* Debug */,
+				F7064BEB2D6AD36900AB4FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7064BEC2D6AD36900AB4FB5 /* Build configuration list for PBXNativeTarget "YouTubeQuizGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7064BED2D6AD36900AB4FB5 /* Debug */,
+				F7064BEE2D6AD36900AB4FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7064BEF2D6AD36900AB4FB5 /* Build configuration list for PBXNativeTarget "YouTubeQuizGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7064BF02D6AD36900AB4FB5 /* Debug */,
+				F7064BF12D6AD36900AB4FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7064BF22D6AD36900AB4FB5 /* Build configuration list for PBXNativeTarget "YouTubeQuizGeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7064BF32D6AD36900AB4FB5 /* Debug */,
+				F7064BF42D6AD36900AB4FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7064BC02D6AD36700AB4FB5 /* Project object */;
+}
