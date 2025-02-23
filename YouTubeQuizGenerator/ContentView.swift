@@ -36,7 +36,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("YouTube Quiz Generator")
+            .navigationTitle("YT Quiz Generator")
             .padding()
         }
     }

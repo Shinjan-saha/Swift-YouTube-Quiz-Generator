@@ -8,8 +8,18 @@
 import Foundation
 
 struct AIService {
-    static let apiKey = "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"  // Replace with your actual API key
     
+    
+    static var apiKey: String {
+        if let path = Bundle.main.path(forResource: "Secrets", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path),
+           let key = dict["OpenAIAPIKey"] as? String {
+            return key
+        }
+        return ""
+    }
+
+   
     static func generateQuiz(from transcript: String, completion: @escaping ([String]?) -> Void) {
         let apiURL = "https://api.openai.com/v1/completions"
         let prompt = "Generate 5 quiz questions from the following transcript:\n\n\(transcript)"
@@ -17,10 +27,12 @@ struct AIService {
         let parameters: [String: Any] = [
             "model": "text-davinci-003",
             "prompt": prompt,
-            "max_tokens": 200
+            "max_tokens": 200,
+            "temperature": 0.7
         ]
         
         guard let url = URL(string: apiURL) else {
+            print("Invalid API URL")
             completion(nil)
             return
         }
@@ -30,19 +42,41 @@ struct AIService {
         request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+        } catch {
+            print("Error encoding JSON: \(error.localizedDescription)")
+            completion(nil)
+            return
+        }
         
         URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data,
-               let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-               let choices = json["choices"] as? [[String: Any]],
-               let text = choices.first?["text"] as? String {
-                let questions = text.components(separatedBy: "\n").filter { !$0.isEmpty }
-                completion(questions)
-            } else {
+            if let error = error {
+                print("Error making API request: \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+            
+            guard let data = data else {
+                print("No data received")
+                completion(nil)
+                return
+            }
+            
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                   let choices = json["choices"] as? [[String: Any]],
+                   let text = choices.first?["text"] as? String {
+                    let questions = text.components(separatedBy: "\n").filter { !$0.isEmpty }
+                    completion(questions)
+                } else {
+                    print("Invalid API response")
+                    completion(nil)
+                }
+            } catch {
+                print("Error parsing JSON: \(error.localizedDescription)")
                 completion(nil)
             }
         }.resume()
     }
 }
-
